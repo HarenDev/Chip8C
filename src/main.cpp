@@ -25,11 +25,15 @@ For a C++ project simply rename the file to .cpp and re-run the build script
 */
 
 #include "raylib.h"
+#include "main.h"
 
 #include "resource_dir.h"	// utility header for SearchAndSetResourceDir
 
-int main ()
-{
+void Test::displayTest(){
+	DrawText(testString.c_str(), 600, 200, 20, WHITE);
+}
+
+int main (){
 	// Tell the window to use vsync and work on high DPI displays
 	SetConfigFlags(FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI);
 
@@ -56,6 +60,8 @@ int main ()
 
 		// draw our texture to the screen
 		DrawTexture(wabbit, 400, 200, WHITE);
+
+		epicTest.displayTest();
 		
 		// end the frame and get ready for the next one  (display frame, poll input, etc...)
 		EndDrawing();
