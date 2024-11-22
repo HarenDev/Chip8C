@@ -401,3 +401,4 @@ raylib-master
 Makefile
 /*.sln
 build/.DS_Store
+.DS_Store
