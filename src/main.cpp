@@ -1,10 +1,6 @@
 /*
-Raylib example file.
-This is an example main file for a simple raylib project.
-Use this as a starting point or replace it with your code.
 
-For a C++ project simply rename the file to .cpp and re-run the build script 
-
+-- Taken from the Raylib example file
 -- Copyright (c) 2020-2024 Jeffery Myers
 --
 --This software is provided "as-is", without any express or implied warranty. In no event 
