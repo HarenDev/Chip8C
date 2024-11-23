@@ -26,16 +26,31 @@ For a C++ project simply rename the file to .cpp and re-run the build script
 
 #include "raylib.h"
 #include "Chip8.h"
-#include "resource_dir.h"	// utility header for SearchAndSetResourceDir
+#include <cstdio>
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 Chip8 chip8;
+string romPath;
+FILE* ROM;
 
 int main (){
+	cout << "Where is thou ROM stored in \n";
+	cin >> romPath;
+	cout << "Staring using " << romPath << "\n";
+
+	ROM = fopen(romPath.c_str(), "rb");
+
+	chip8.doInit();
+	chip8.doLoad(ROM);
+
 	// Tell the window to use vsync and work on high DPI displays
 	SetConfigFlags(FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI);
 
 	// Create the window and OpenGL context
-	InitWindow(1280, 800, "Hello Raylib");
+	InitWindow(1280, 800, "Chip8C");
 	
 	// game loop
 	while (!WindowShouldClose())		// run the loop untill the user presses ESCAPE or presses the Close button on the window

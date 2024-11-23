@@ -1,4 +1,8 @@
 #include "Chip8.h"
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
 
 void Chip8::doInit(){
     pc = 0x200;
@@ -6,11 +10,20 @@ void Chip8::doInit(){
     I = 0;
     sp = 0;
 
-    //some stuff should go here
+    //Setup Graphics & Other stuff
 
     for (int i = 0; i < 80; ++i){
         memory[i] = chip8_fontset[i];
     }
+}
+
+void Chip8::doLoad(FILE* ROM){
+
+    cout << ROM;
+
+    // for (int i = 0; i < bufferSize; ++i){
+
+    // }
 }
 
 void Chip8::doCycle(){

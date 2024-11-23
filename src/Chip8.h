@@ -1,11 +1,13 @@
 #ifndef CHIP8C_H
 #define CHIP8C_H
 
+#include <cstdio>
+
 class Chip8 {
 public:
     void doInit();
+    void doLoad(FILE* ROM);
     void doCycle();
-    void doLoad();
 
 private:
     //variables
