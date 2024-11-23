@@ -6,8 +6,10 @@ void Chip8::doInit(){
     I = 0;
     sp = 0;
 
+    //some stuff should go here
+
     for (int i = 0; i < 80; ++i){
-        
+        memory[i] = chip8_fontset[i];
     }
 }
 
