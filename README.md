@@ -6,7 +6,9 @@ Chip8 emulator written in C++, using Raylib. (I'll change more of the readme lat
 - Implment all 35 Opcodes
 - Finish Emulation Cycles
 - Start working on graphics
-- Main program loop
+- Figure out input
+- Figure out main program loop
+- Do sound (maybe)
 
 ## Supported Platforms
 Quickstart supports the main 3 desktop platforms
