@@ -1,5 +1,5 @@
 # Chip8C(++)
-Chip8 emulator written in C++, using Raylib. (I'll change more of the readme later)
+Chip8 emulator written in C++, using Raylib (a C library). (I'll change more of the readme later)
 
 # TODO (In no order, may add more later):
 - File Loading
