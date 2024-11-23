@@ -1,6 +1,12 @@
-# Raylib-Quickstart
-A simple cross platform template for setting up a project with the bleeding edge raylib code.
-Works with C or C++.
+# Chip8C
+Chip8 emulator written in C++, using Raylib. (I'll change more of the readme later)
+
+# TODO (In no order, may add more later):
+- File Loading
+- Implment all 35 Opcodes
+- Finish Emulation Cycles
+- Start working on graphics
+- Main program loop
 
 ## Supported Platforms
 Quickstart supports the main 3 desktop platforms
@@ -59,33 +65,6 @@ DO NOT INSALL ANOTHER MinGW-W64 from another source such as msys2, you don't nee
 
 # Output files
 The built code will be in the bin dir
-
-# Working directories and the resources folder
-The example uses a utility function from path_utils.h that will find the resources dir and set it as the current working directory. This is very useful when starting out. If you wish to manage your own working directory you can simply remove the call to the function and the header.
-
-# Changing to C++
-Simply rename src/main.c to src/main.cpp and re-run the steps above and do a clean build.
-
-# Using your own code
-Simply remove src/main.c and replace it with your code, and re-run the steps above and do a clean build.
-
-# Building for other OpenGL targets
-If you need to build for a different OpenGL version than the default (OpenGL 3.3) you can specify an openGL version in your premake command line. Just modify the bat file or add the following to your command line
-
-## For OpenGL 1.1
---graphics=opengl11
-
-## For OpenGL 2.1
---graphics=opengl21
-
-## For OpenGL 4.3
---graphics=opengl43
-
-## For OpenGLES 2.0
---graphics=opengles2
-
-## For OpenGLES 3.0
---graphics=opengles3
 
 # License
 Copyright (c) 2020-2024 Jeffery Myers
