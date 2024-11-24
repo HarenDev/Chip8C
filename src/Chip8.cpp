@@ -1,4 +1,5 @@
 #include "Chip8.h"
+#include "raylib.h"
 #include <iostream>
 #include <cstdio>
 
@@ -12,6 +13,7 @@ void Chip8::doInit(){
 
     //Setup Graphics & Other stuff
 
+    //Load the fontset into memory
     for (int i = 0; i < 80; ++i){
         memory[i] = chip8_fontset[i];
     }
@@ -19,14 +21,14 @@ void Chip8::doInit(){
 
 void Chip8::doLoad(FILE* ROM){
 
-    cout << ROM;
+    cout << ROM; // just for testing purposes
 
     // for (int i = 0; i < bufferSize; ++i){
-
+        //need to figure out how to do the buffer, loading into memory should be easy ;p
     // }
 }
 
 void Chip8::doCycle(){
-
+    //TODO
 }
 

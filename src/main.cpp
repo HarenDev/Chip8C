@@ -28,15 +28,17 @@
 
 using namespace std;
 
+//might move these to a header file later idk
 Chip8 chip8;
 string romPath;
 FILE* ROM;
 
 int main (){
+	// will add proper loop here later, just wanna establish basic structure first
 	cout << "Where is thou ROM stored in \n";
 	cin >> romPath;
 	cout << "Staring using " << romPath << "\n";
-
+	
 	ROM = fopen(romPath.c_str(), "rb");
 
 	chip8.doInit();
